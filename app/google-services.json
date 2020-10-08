@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "842487974804",
+    "firebase_url": "https://alitasky2020.firebaseio.com",
+    "project_id": "alitasky2020",
+    "storage_bucket": "alitasky2020.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:842487974804:android:f0473f537bb963de6edd81",
+        "android_client_info": {
+          "package_name": "awad.ali.alitasky2020"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "842487974804-ripr0q5c5aj57sjfuq16v8rfehrl8a73.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEfdcwLGIixHJ3U7_wye1_c843FvmEN7w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "842487974804-ripr0q5c5aj57sjfuq16v8rfehrl8a73.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
