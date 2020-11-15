@@ -18,7 +18,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import awad.ali.alitasky2020.MyUtils.MyValidations;
 import awad.ali.alitasky2020.R;
 
-public class SigninActivity<Signin> extends AppCompatActivity {
+public class SigninActivity extends AppCompatActivity {
     private EditText etEmail, etPassWord;
     private Button btnLogIn, btnSignUp;
 
@@ -84,7 +84,7 @@ public class SigninActivity<Signin> extends AppCompatActivity {
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if (task.isSuccessful())
                 {
-                    Intent i=new Intent(SigninActivity.this, activity_add_task.MainActivity.class);
+                    Intent i=new Intent(SigninActivity.this,MainActivity.class);
                     startActivity(i);
                 }
                 else

@@ -20,7 +20,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import awad.ali.alitasky2020.Data.MyTask;
 import awad.ali.alitasky2020.R;
 
-    public class MainActivity extends AppCompatActivity {
+    public class activity_add_task extends AppCompatActivity {
         private EditText etTitle,etSupject;
         private SeekBar skbrlmportant,skbrNeccesary;
         private Button btnSaveTask;
@@ -86,11 +86,11 @@ import awad.ali.alitasky2020.R;
                 @Override
                 public void onComplete(@NonNull Task<Void> task) {
                     if (task.isSuccessful()){
-                        Toast.makeText(MainActivity.this, "add successful", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(activity_add_task.this, "add successful", Toast.LENGTH_SHORT).show();
                         finish();
                     }
                     else {
-                        Toast.makeText(MainActivity.this, "add failed"+task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                        Toast.makeText(activity_add_task.this, "add failed"+task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                         task.getException().printStackTrace();
                     }
                 }
