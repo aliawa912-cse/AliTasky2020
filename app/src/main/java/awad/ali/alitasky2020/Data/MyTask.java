@@ -2,6 +2,7 @@ package awad.ali.alitasky2020.Data;
 
 public class MyTask
 {
+    public int getImportant;
     private String key;
     private String title;
     private String sub;
