@@ -14,6 +14,9 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.FirebaseDatabase;
+
+import java.util.Calendar;
 
 import awad.ali.alitasky2020.MyUtils.MyValidations;
 import awad.ali.alitasky2020.R;
@@ -21,6 +24,7 @@ import awad.ali.alitasky2020.R;
 public class SigninActivity extends AppCompatActivity {
     private EditText etEmail, etPassWord;
     private Button btnLogIn, btnSignUp;
+    private Calendar FirebaseAuth;
 
 
     @Override
@@ -87,7 +91,7 @@ public class SigninActivity extends AppCompatActivity {
     }
 
     private void Signin(String stEmail, String stPassw) {
-        FirebaseAuth auth=FirebaseAuth.getInstance();
+        FirebaseDatabase auth=FirebaseDatabase.getInstance();
         auth.signInWithEmailAndPassword(stEmail,stPassw).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
