@@ -32,7 +32,7 @@ public class SigninActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_in);
         //CHEKE IF I SIGNED IN BEFORE
-        FirebaseAuth auth=FirebaseAuth.getInstance();
+        Calendar auth=FirebaseAuth.getInstance();
         if (auth.getCurrentUser()!=null)
         {
             Intent i=new Intent(getBaseContext(),MainActivity.class);
